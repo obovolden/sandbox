@@ -1,19 +1,40 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-
-
-}
-
-table {
-    border: 1px, solid #000;
-    border-style: solid;
-    border-width: 1px;
+    margin: 0;
 
 }
-th, td {
-    border-style: solid;
-    border-width: 1px;
+
+#global-header{
+    background-image: url("https://picsum.photos/2050/500/?grayscale");
+    background-size: cover;
+    min-height: 300px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+    nav{
+        background-color: #fff;
+        border-style: solid;
+        border-color: #827f7f;
+        border-width: 1px;
+        
+
+        ul{            
+            li{
+                list-style: none;                
+            }
+        }
+    }
 }
 
 /* Main Header */
@@ -25,11 +46,27 @@ th, td {
 
     font-weight: 900;
 
-    color: #0087ff;
+    color: #747b82;
 
     text-decoration: none;
+
+    text-transform: uppercase;
 }
 
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+
+    section {
+        h2{
+            text-align: center;
+        }
+        article {
+            margin: 0 auto;
+        }
+    }
+}
 
 
 a { 
@@ -59,4 +96,53 @@ article{
     color: #fff;
     padding: 1rem;
 }
+
+.btn2{
+    display: inline-block;
+    background-color: #4071bf;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+
+.side-container{
+    background-color: #c4c4c4;
+    padding: 1rem;
+
+}
+
+
+footer{
+    background-color: #333437;
+    color: #fff;
+    padding: 1rem;
+    min-height: 150px;
+
+    form{
+        
+            input{
+                display: block;
+                padding: 0.5rem;
+                margin: 0.4rem 0;
+                
+        }
+        }
+}
+
+.textBox{
+    width: 100%;
+}
+
+#melding{
+    width: 100%;
+    height: 8rem;
+}
+
+.age-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
 

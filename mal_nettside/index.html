@@ -8,7 +8,7 @@
 </head>
 <body>
     
-<header>
+<header id="global-header">
 
       <a href="index.html" id="mainlogo">LOGO</a>
       <nav>
@@ -30,13 +30,13 @@
 
     <main>
 
-        <section>
+        <!-- <section>
           <h2>Artikler</h2>
           <article>
             <img src="https://picsum.photos/200/300/?blur" alt="GTA V">
-            <h3>Artikkel 1</h3>
+            <h3>Labøvelse</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="product.html" class="btn">Les mer</a>
+            <a href="ovelse.html" class="btn">Les mer</a>
           </article>
 
           <article>
@@ -58,7 +58,7 @@
             <h3>Artikkel 4</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="product.html" class="btn">Les mer</a>
-          </article>
+          </article> -->
 
 
         </section>
@@ -68,7 +68,7 @@
           <h2>Kategorier</h2>
 
           <article>
-            <h3><a href="action.html">Action</a></h3>
+            <h3><a href="ovelse.html">Labøvelse</a></h3>
           </article>
           <article>
             <h3><a href="nintendo.html">Nintendo</a></h3>
@@ -85,7 +85,7 @@
     </main>
 
 
-    <aside>
+    <aside class="side-container">
         <section>
 
             <h2>Artikkler om sematikk</h2>
@@ -109,41 +109,45 @@
         </section>
     </aside>
 
-<footer>
-    <h4 id="C4">Kontaktinfo</h4>
+<footer id="C4">
+    <h2>Kontaktinfo</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <form>
         <p>
         <label>
           Navn:
-          <input type="text" placeholder="Ola Normann">
+          <input class="textBox" type="text" placeholder="Ola Normann">
         </label>
         
 
 
         <label>
           Emne:
-          <input type="text" placeholder="Emne">
+          <input class="textBox" type="text" placeholder="Emne">
         </label>
         </p>
 
 
         <label>
           E-post:
-          <input type="email" placeholder="ola.normann@hiof.no....">
+          <input class="textBox" type="email" placeholder="ola.normann@hiof.no....">
         </label>
 
         <label>
           Melding:
-          <input type="text" placeholder="Melding...">
+          <input  id="melding" type="text" placeholder="">
         </label>
 
 
         <p>
-        <input type="submit" value="Meld meg på">
+
+    
+          <label for="age-validation">Bekreft</label>
+          <input type="checkbox" id="age-validation">
+
+        <input class="btn2" type="submit" value="Meld meg på">
+
         
-        <label for="age-validation">Bekreft</label>
-        <input type="checkbox" id="age-validation">
         </p>
       </form>
 

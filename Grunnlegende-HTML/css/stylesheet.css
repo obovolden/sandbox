@@ -1,9 +1,42 @@
+
+
+:root{
+    --basic-gray: #efefefef;
+    --basic-blue: #d3e6ff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 
 }
 
 /* Main Header */
+#global-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    z-index: 999;
+    nav{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+
 
 #mainlogo{
     font-size: 30px;
@@ -25,6 +58,54 @@ a {
 }
 
 
+/* Hero-seksjon */
+.deal-section{
+    background-image: url("https://picsum.photos/2050/500/?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: var(--basic-blue);
+    padding: 1rem;
+    position: relative;
+    height: 50vh;
+    min-height: 200px;
+    /* img{
+        width: 100%;
+    }
+
+    h2, p, a{
+        position: absolute;
+    }
+
+    p{
+        top: 63px;
+
+    }
+    
+    a{
+        top: 160px;
+    } */
+}
+
+
+/* Hovedinnhold */
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+    section {
+        h2{
+            text-align: center;
+        }
+        article {
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
 article{
     margin: 1rem 0;
     border:1px solid #827f7f;
@@ -38,11 +119,38 @@ article{
 }
 
 
-/* Hovedinnhold */
 
 .btn{
     display: inline-block;
     background-color: #000;
     color: #fff;
     padding: 1rem;
+    border: none;
+}
+
+.side-container{
+    background-color: var(--basic-gray);
+    padding: 1rem;
+
+    form{
+        
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 0.4rem 0;
+        }
+    }
+}
+
+.age-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer{
+    background-color: #333437;
+    color: #fff;
+    padding: 1rem;
+    min-height: 150px;
 }

@@ -8,7 +8,7 @@
   </head>
   <body>
     <!--Kommentarer-->
-    <header>
+    <header id="global-header">
 
       <a href="index.html" id="mainlogo">LOGO</a>
       <nav>
@@ -23,10 +23,10 @@
       </nav>
     </header>
 
-    <section>
+    <section class="deal-section">
 
       <h2>Crazy Gaming Deals</h2>
-      <img src="https://picsum.photos/200/300/?blur" alt="_">
+      <!-- <img src="https://picsum.photos/200/300/?blur" alt="_"> -->
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <a href="offers.html" class="btn">Se tilbud</a>
 
@@ -92,7 +92,7 @@
 
     </main>
     
-    <aside>
+    <aside class="side-container">
       <h4>Meld deg inn i Spællklubben</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <form>
@@ -101,13 +101,19 @@
           <input type="email" placeholder="ola.normann@hiof.no....">
         </label>
 
-        <input type="submit" value="Meld meg på">
+        <input class="btn" type="submit" value="Meld meg på">
         
-        <label for="age-validation">Bekreft alder over 18</label>
-        <input type="checkbox" id="age-validation">
+        <label class="age-check" for="age-validation">Bekreft alder over 18
+          <input type="checkbox" id="age-validation">
+        </label>
       </form>
+      
     </aside>
 
+
+<footer>
+    Webutvikling 2025
+</footer>
 
 
   </body>

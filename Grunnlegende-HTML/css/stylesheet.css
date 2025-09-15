@@ -15,14 +15,30 @@ body {
 
 }
 
+#page-container{
+    display:grid;
+    /* grid-template-areas: "header" 
+                            "hero" 
+                            "main" 
+                            "aside" 
+                            "footer"; */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+
 /* Main Header */
 #global-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    position: sticky;
-    z-index: 999;
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+
     nav{
         ul{
             padding: 0;
@@ -69,6 +85,17 @@ a {
     position: relative;
     height: 50vh;
     min-height: 200px;
+    
+    
+
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+
+
     /* img{
         width: 100%;
     }
@@ -94,6 +121,13 @@ main{
     max-width: 1200px;
     width: 100%;
     margin: 1rem auto;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+
     section {
         h2{
             text-align: center;
@@ -132,6 +166,12 @@ article{
     background-color: var(--basic-gray);
     padding: 1rem;
 
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
     form{
         
         input{
@@ -148,9 +188,61 @@ article{
     gap: 1rem;
 }
 
+
+
+
 footer{
     background-color: #333437;
     color: #fff;
     padding: 1rem;
     min-height: 150px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
+
+
+
+    @media only screen and (min-width: 600px){
+    #page-container{
+            grid-template-columns: 1fr 1fr 0.5fr;
+            grid-template-rows: repeat(4, auto);
+        }
+
+        #global-header{
+            grid-column-end: 4;
+        }
+        .deal-section{
+            grid-column-end: 4;
+        }
+        main{
+            grid-column-end: 3;
+        }
+        .side-container{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        footer{
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    }
+
+
+
+/* @media only screen and (min-width: 600px){
+    #page-container{
+        grid-template-areas: "header header header"
+                             "hero hero hero"
+                             "main main aside"
+                             "footer footer footer";
+        grid-template-columns: 1fr 1fr 0.5fr;
+        gap: 10px;
+    }
+    
+} */

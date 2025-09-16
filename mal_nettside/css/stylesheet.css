@@ -109,14 +109,31 @@ article{
     background-color: #c4c4c4;
     padding: 1rem;
 
+    section{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
 }
 
 
 footer{
     background-color: #333437;
     color: #fff;
-    padding: 1rem;
     min-height: 150px;
+    padding: 16px;
+
+    
+
+    h2, form, p{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    
+
+
 
     form{
         
@@ -124,7 +141,7 @@ footer{
                 display: block;
                 padding: 0.5rem;
                 margin: 0.4rem 0;
-                
+                max-width: 600px;
         }
         }
 }

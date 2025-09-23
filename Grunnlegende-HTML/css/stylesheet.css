@@ -65,7 +65,7 @@ body {
 .fa-magnifying-glass{
         display: inline-block;
     }
-
+<
 
 #mainlogo{
     font-size: 30px;
@@ -239,7 +239,7 @@ footer{
 
         .fa-burger{
         display: none;
-        }
+    }
         .fa-magnifying-glass{
         display: none;
         }

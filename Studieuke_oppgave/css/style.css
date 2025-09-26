@@ -1,0 +1,151 @@
+:root{
+    --main: #f5efe6;
+    --aside: #e8dfca;
+    --header: #cbdceb;
+    --footer: #6d94c5;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: clamp(16px, 1em + 1vw, 30px);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* min-height: 100vh; */
+    display: flex;
+    font-size: 1rem;
+}
+
+#gridContainer{
+    width: 100% ;
+    height: inherit;                
+    display: grid;
+    grid-template-areas: "topp" 
+                         "hovedinnhold" 
+                         "sideinnhold" 
+                         "bunn";
+}
+
+header,main,aside,footer{
+    padding: 1rem;
+}
+
+header{
+    background-color: var(--header);
+    grid-area: topp;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+        button{
+            border: none;
+            background: none;
+        }
+        nav{
+            
+            ul{
+                list-style: none;
+                padding-left: 0px;
+                margin: 0;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }   
+                }
+            }
+        }
+}
+
+#mainlogo{
+    font-size: 30px;
+    font-family: arial;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+}
+
+.fa-bars{
+        display: inline-block;
+        font-size: 30px;
+        color: #000;
+        font-weight: 600;
+    }
+.fa-magnifying-glass{
+        display: inline-block;
+        font-size: 30px;
+        color: #000;
+        font-weight: 600;
+    }
+.fa-xmark{
+        display: inline-block;
+        font-size: 30px;
+        color: #000;
+        font-weight: 600;
+    }
+
+main{
+    background-color: var(--main);
+    grid-area: hovedinnhold;
+}
+
+aside{
+    background-color: var(--aside);
+    grid-area: sideinnhold;
+}
+
+footer{
+    background-color: var(--footer);
+    grid-area: bunn;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+@media only screen and (max-width: 660px){
+    #menu {
+        background-color: rgb(129, 218, 155);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+        margin-top: 80px
+}
+}
+
+@media only screen and (min-width: 660px){
+    .hidden{
+        display: inline-block;
+    }
+
+
+
+    #menu{
+        justify-content: space-between;
+        
+        ul{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .fa-xmark{
+        display: none;
+    }
+}

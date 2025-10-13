@@ -1,0 +1,10 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    // dette henter css fra .flex klassen ved hjelp av @extend
+    @extend .flex;
+    flex-direction: column;
+}
